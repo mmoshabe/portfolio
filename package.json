@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "previews": "node scripts/capture-previews.mjs"
   },
   "dependencies": {
+    "gsap": "^3.15.1",
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0"
