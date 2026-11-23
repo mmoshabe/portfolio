@@ -165,6 +165,36 @@ export const work = [
     cta: "View on GitHub",
     tone: ["#2a1630", "#f7a8d8"],
   },
+  {
+    n: "12",
+    name: "AI Support Triage",
+    slug: "ai-support-triage",
+    tag: "AI engineering · Multi-agent on Claude",
+    desc: "Classifier, drafter and critic agents triage support tickets; risky ones go to a human in Slack. 96.8% routing accuracy on a held-out set, $0.018 per ticket.",
+    href: "https://github.com/mmoshabe/ai-support-triage",
+    cta: "View on GitHub",
+    tone: ["#10213a", "#7cc4ff"],
+  },
+  {
+    n: "13",
+    name: "Job Copilot",
+    slug: "job-copilot",
+    tag: "AI engineering · Daily agent",
+    desc: "Scores job posts against my CV and writes cover letters that a second agent fact-checks, so fabricated claims went to 0. Runs daily with a Slack digest.",
+    href: "https://github.com/mmoshabe/job-copilot",
+    cta: "View on GitHub",
+    tone: ["#1d2a14", "#b8f27c"],
+  },
+  {
+    n: "14",
+    name: "AI Adoption Playbook",
+    slug: "ai-adoption-playbook",
+    tag: "AI strategy · ROI + POPIA governance",
+    desc: "Build vs buy, an ROI model with sensitivity analysis (about 3-month payback), a gated rollout and a one-page POPIA governance checklist.",
+    href: "https://github.com/mmoshabe/ai-adoption-playbook",
+    cta: "View on GitHub",
+    tone: ["#2e1d10", "#ffb27c"],
+  },
 ];
 
 export const experience = [
