@@ -155,6 +155,16 @@ export const work = [
     cta: "Case notes on request",
     tone: ["#2e2614", "#ffd166"],
   },
+  {
+    n: "11",
+    name: "AI Booking Assistant",
+    slug: "ai-booking-assistant",
+    tag: "Implementation · Claude + n8n, live at a salon",
+    desc: "Website enquiries sorted by AI with a drafted reply checked against the price list, logged to Sheets and emailed to the owner. About $0.001 per enquiry, hosted for $0.",
+    href: "https://github.com/mmoshabe/ai-booking-assistant",
+    cta: "View on GitHub",
+    tone: ["#2a1630", "#f7a8d8"],
+  },
 ];
 
 export const experience = [
