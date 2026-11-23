@@ -1,7 +1,7 @@
 export const site = {
   name: "Nephtally Moshabeshe",
   wordmark: "nephtally moshabeshe",
-  role: "Technical Support & Integration Engineer",
+  role: "AI Implementation & Integration Engineer",
   email: "moshneph@gmail.com",
   location: "Johannesburg",
   tz: "Africa/Johannesburg",
@@ -159,6 +159,7 @@ export const work = [
     n: "11",
     name: "AI Booking Assistant",
     slug: "ai-booking-assistant",
+    kind: "ai",
     tag: "Implementation · Claude + n8n, live at a salon",
     desc: "Website enquiries sorted by AI with a drafted reply checked against the price list, logged to Sheets and emailed to the owner. About $0.001 per enquiry, hosted for $0.",
     href: "https://github.com/mmoshabe/ai-booking-assistant",
@@ -169,6 +170,7 @@ export const work = [
     n: "12",
     name: "AI Support Triage",
     slug: "ai-support-triage",
+    kind: "ai",
     tag: "AI engineering · Multi-agent on Claude",
     desc: "Classifier, drafter and critic agents triage support tickets; risky ones go to a human in Slack. 96.8% routing accuracy on a held-out set, $0.018 per ticket.",
     href: "https://github.com/mmoshabe/ai-support-triage",
@@ -179,6 +181,7 @@ export const work = [
     n: "13",
     name: "Job Copilot",
     slug: "job-copilot",
+    kind: "ai",
     tag: "AI engineering · Daily agent",
     desc: "Scores job posts against my CV and writes cover letters that a second agent fact-checks, so fabricated claims went to 0. Runs daily with a Slack digest.",
     href: "https://github.com/mmoshabe/job-copilot",
@@ -189,6 +192,7 @@ export const work = [
     n: "14",
     name: "AI Adoption Playbook",
     slug: "ai-adoption-playbook",
+    kind: "ai",
     tag: "AI strategy · ROI + POPIA governance",
     desc: "Build vs buy, an ROI model with sensitivity analysis (about 3-month payback), a gated rollout and a one-page POPIA governance checklist.",
     href: "https://github.com/mmoshabe/ai-adoption-playbook",
@@ -223,6 +227,7 @@ export const experience = [
     dates: "Dec 2025 – Aug 2026",
     points: [
       "Remained the technical support contact for clients while leading product builds.",
+      "Designed an AI voice admissions assistant (Vapi + Pinecone) grounded in a knowledge base.",
       "Designed and built 8 SaaS products across e-commerce, AI voice, marketplaces, FinTech and CRM.",
       "Lead developer on client platforms Reeliant (higher-ed), ShipWizard (shipping) and CourseCommand (golf instruction).",
       "Resolved production issues on live products, including bank sync failures and API pagination edge cases.",
@@ -245,9 +250,9 @@ export const experience = [
     org: "Körber (HighJump WMS)",
     dates: "Jul 2022 – Apr 2024",
     points: [
-      "Handled incidents via ServiceNow, PagerDuty and Moogsoft against SLA.",
+      "Resolved 20+ incidents a week via ServiceNow, PagerDuty and Moogsoft at 95%+ SLA compliance.",
       "Troubleshot RF scanner errors, stuck orders, interface failures and label printing live.",
-      "Ran root cause analysis on recurring incidents and shipped preventive fixes.",
+      "Cut repeat incidents by 20% through root cause analysis and preventive fixes.",
       "Optimised SQL Server queries and scripts, improving performance by 30%.",
     ],
   },
@@ -294,39 +299,6 @@ export const stats = [
   { value: "30%", label: "Faster SQL Server queries" },
   { value: "7", label: "Products live in production" },
   { value: "1st", label: "Place, Tech Hub Hackathon" },
-];
-
-export const dashboards = [
-  {
-    src: "/dashboards/smoothlinks-dashboard.jpg",
-    w: 1600, h: 705,
-    project: "Smooth Links",
-    title: "Owner dashboard",
-    note: "Cash, debtors, creditors and VAT at a glance, beside the WhatsApp inbox the assistant answers.",
-    feature: true,
-  },
-  {
-    src: "/dashboards/reeliant-planner.jpg",
-    w: 1600, h: 1089,
-    project: "Reeliant",
-    title: "Academic Planner",
-    note: "Degree progress, graduation estimate and a term-by-term plan built from the degree audit.",
-  },
-  {
-    src: "/dashboards/smoothlinks-invoices.jpg",
-    w: 1600, h: 596,
-    project: "Smooth Links",
-    title: "Invoice lifecycle",
-    note: "Each invoice tracked from emailed to opened, paid by card and matched to the bank.",
-  },
-  {
-    src: "/dashboards/coursecommand-lessons.jpg",
-    w: 1600, h: 668,
-    project: "CourseCommand",
-    title: "Pro and golfer views",
-    note: "Coaches document every lesson with notes and video; golfers keep the full history.",
-    feature: true,
-  },
 ];
 
 /** Cases for the "one ticket, both sides" panel. `bad: true` log lines render in red. */
@@ -458,4 +430,35 @@ export const tickets = [
     ],
     prevent: "Query timing is now tracked on the support team's SLA dashboard.",
   },
+];
+
+export const metrics = [
+  { value: "96.8", unit: "%", label: "AI triage routing accuracy*" },
+  { value: "95", unit: "%+", label: "Production support SLA" },
+  { value: "8", unit: "", label: "SaaS products built" },
+  { value: "7", unit: "", label: "Products live in production" },
+];
+
+export const capabilities = [
+  { icon: "bot", title: "AI assistants & agents", text: "Conversational assistants, multi-agent workflows, prompt design and knowledge-grounded answers." },
+  { icon: "workflow", title: "Workflow automation", text: "Business processes automated in n8n, Make, GoHighLevel, HubSpot and Power Automate." },
+  { icon: "braces", title: "System integration", text: "REST APIs, webhooks and OAuth: reliable connections between CRMs, payments, banks and ERPs." },
+  { icon: "lifebuoy", title: "Production support & RCA", text: "Incident management against SLA, root cause analysis and fixes that stay fixed." },
+  { icon: "shield", title: "AI quality & oversight", text: "Evaluation sets, output validation, human approval steps and POPIA-aware adoption." },
+  { icon: "code", title: "Software & data", text: "TypeScript, React, Next.js and Python, with PostgreSQL, SQL Server and reporting." },
+] as const;
+
+export const approach = [
+  { title: "Discover", text: "Understand the process, the users and the actual problem." },
+  { title: "Build", text: "Pick the right mix of AI, automation and conventional software." },
+  { title: "Validate", text: "Test outputs, edge cases, accuracy and human escalation." },
+  { title: "Support", text: "Document it, train people and own it in production." },
+];
+
+export const skillGroups = [
+  { title: "AI & LLMs", items: "Claude · OpenAI · Vapi · Pinecone · AI agents · Prompt engineering · RAG · Knowledge bases · AI evaluation" },
+  { title: "Automation", items: "n8n · Make · GoHighLevel · HubSpot · Power Automate · Zapier" },
+  { title: "Integration", items: "REST APIs · Webhooks · OAuth · Stripe Connect · Paystack · Plaid · Shopify · Twilio · Gmail" },
+  { title: "Engineering & data", items: "TypeScript · React · Next.js · Python · PostgreSQL · SQL Server · Power BI · SSRS" },
+  { title: "Support & operations", items: "ServiceNow · PagerDuty · Moogsoft · Incident management · RCA · Runbooks · SOPs · Client onboarding" },
 ];
