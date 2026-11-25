@@ -221,6 +221,17 @@ export const work = [
     cta: "View on GitHub",
     tone: ["#1a1d33", "#a9b4ff"],
   },
+  {
+    n: "17",
+    name: "Invoice Extractor",
+    slug: "invoice-extractor",
+    kind: "ai",
+    tag: "Implementation · Document AI + SARS rules",
+    desc: "Supplier invoices and till-slip photos become an accounting import file; SARS tax-invoice rules in code send the rest to review with reasons. Every planted mistake caught; $0.0007 per document.",
+    href: "https://github.com/mmoshabe/invoice-extractor",
+    cta: "View on GitHub",
+    tone: ["#2b2410", "#f2d27c"],
+  },
 ];
 
 export const experience = [

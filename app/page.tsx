@@ -93,7 +93,7 @@ export default function Home() {
           <span className="section-kicker">AI ENGINEERING</span>
           <p>Agents and AI implementations with the evaluation to back them up.</p>
         </div>
-        <Projects kind="ai" featured={2} />
+        <Projects kind="ai" featured={1} />
 
         <div className="github-strip">
           <div><GithubIcon size={19} /><span>More code and experiments on GitHub</span></div>
