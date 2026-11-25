@@ -161,7 +161,7 @@ export const work = [
     slug: "ai-booking-assistant",
     kind: "ai",
     tag: "Implementation · Claude + n8n, live at a salon",
-    desc: "Website enquiries sorted by AI with a drafted reply checked against the price list, logged to Sheets and emailed to the owner. About $0.001 per enquiry, hosted for $0.",
+    desc: "Website enquiries sorted by AI with a drafted reply checked against the price list, logged to Sheets and emailed to the owner. About $0.0004 per enquiry, hosted for $0.",
     href: "https://github.com/mmoshabe/ai-booking-assistant",
     cta: "View on GitHub",
     tone: ["#2a1630", "#f7a8d8"],
@@ -198,6 +198,17 @@ export const work = [
     href: "https://github.com/mmoshabe/ai-adoption-playbook",
     cta: "View on GitHub",
     tone: ["#2e1d10", "#ffb27c"],
+  },
+  {
+    n: "15",
+    name: "n8n vs Make vs Zapier",
+    slug: "lead-workflow-compare",
+    kind: "ai",
+    tag: "Automation · Same AI workflow, three platforms",
+    desc: "One Claude lead-qualification workflow built on n8n, Make and Zapier and measured on 20 labelled leads. All three caught 6/6 high-fit leads; the real differences were error handling, cost and setup.",
+    href: "https://github.com/mmoshabe/lead-workflow-compare",
+    cta: "View on GitHub",
+    tone: ["#14262a", "#7ce0d4"],
   },
 ];
 
