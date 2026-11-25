@@ -210,6 +210,17 @@ export const work = [
     cta: "View on GitHub",
     tone: ["#14262a", "#7ce0d4"],
   },
+  {
+    n: "16",
+    name: "POPIA Assistant",
+    slug: "popia-assistant",
+    kind: "ai",
+    tag: "AI engineering · RAG with citations",
+    desc: "Answers POPIA questions citing the exact provision, or says the documents don't cover it. Hybrid search and Claude citations; 87% fully correct on a fresh held-out set, and it never once said 'you're compliant'.",
+    href: "https://github.com/mmoshabe/popia-assistant",
+    cta: "View on GitHub",
+    tone: ["#1a1d33", "#a9b4ff"],
+  },
 ];
 
 export const experience = [
@@ -467,7 +478,7 @@ export const approach = [
 ];
 
 export const skillGroups = [
-  { title: "AI & LLMs", items: "Claude · OpenAI · Vapi · Pinecone · AI agents · Prompt engineering · RAG · Knowledge bases · AI evaluation" },
+  { title: "AI & LLMs", items: "Claude · OpenAI · Vapi · Pinecone · Voyage AI · AI agents · Prompt engineering · RAG · Knowledge bases · AI evaluation" },
   { title: "Automation", items: "n8n · Make · GoHighLevel · HubSpot · Power Automate · Zapier" },
   { title: "Integration", items: "REST APIs · Webhooks · OAuth · Stripe Connect · Paystack · Plaid · Shopify · Twilio · Gmail" },
   { title: "Engineering & data", items: "TypeScript · React · Next.js · Python · PostgreSQL · SQL Server · Power BI · SSRS" },
