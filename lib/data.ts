@@ -232,6 +232,17 @@ export const work = [
     cta: "View on GitHub",
     tone: ["#2b2410", "#f2d27c"],
   },
+  {
+    n: "18",
+    name: "Salon MCP Server",
+    slug: "salon-mcp",
+    kind: "ai",
+    tag: "AI engineering · MCP + guardrails",
+    desc: "Gives Claude safe access to a salon's bookings: it looks up and proposes, the owner approves. Permission levels, POPIA masking and consent, audit log; 5/5 on held-out agent scenarios.",
+    href: "https://github.com/mmoshabe/salon-mcp",
+    cta: "View on GitHub",
+    tone: ["#12262a", "#8fe3c8"],
+  },
 ];
 
 export const experience = [
